@@ -20,7 +20,7 @@ def main():
     key = default['consumer_key']
     secret = default['consumer_secret']
 
-    if not default['bearer_token']:
+    if 'bearer_token' not in default:
         default['bearer_token'] = get_bearer_token(key, secret)
 
     for section in config.sections():
