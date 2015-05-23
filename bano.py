@@ -168,7 +168,7 @@ def make_feedgenerator(conf):
     feedgen.language(conf['short'])
     feedgen.link(href='{}.atom.xml'.format(conf['short']))
     feedgen.id('{}.atom.xml'.format(conf['short']))
-    feedgen.generator(generator='bano', version='0.0.0', uri='https://git.kyriasis.com/kyrias/bano')
+    feedgen.generator(generator='bano', version='0.0.0', uri='https://github.com/kyrias/bano')
     return feedgen
 
 
